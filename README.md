@@ -31,3 +31,5 @@ Run the following command to implement prediction.
 ```bash
 python predict.py --config configs/predict.yaml
 ```
+
+(ps: all these for my beloved mjj~)
