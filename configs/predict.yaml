@@ -1,0 +1,34 @@
+#===== data =====#
+# Specify the directory of downloaded images
+image_dir: '/Users/dachuan/projects/mjj/albef_predict/downloaded_images'
+
+# Specify the csv file containing the features of 'product_id', 'img_name',and 'title'
+data: '/Users/dachuan/projects/mjj/albef_predict/sample.csv'
+
+# predict batch size
+batch_size: 32
+
+# Truncate the title to a maximum number of words
+max_words: 50
+
+# Specify the resolution of processed images. NOTE: Do NOT change!
+resolution: 256
+
+
+#===== model =====#
+# Specify the path of model pretrained weights
+checkpoint: '/Users/dachuan/projects/mjj/albef_predict/ALBEF.pth'
+
+# Specify the path of bert config file
+bert_config: /Users/dachuan/projects/mjj/albef_predict/configs/config_bert.json
+
+# Specify the type of text encoder for dowmloading parameters from hugging face. NOTE: Do NOT change!
+text_encoder: 'bert-base-uncased'
+
+
+#===== output =====#
+# Whether to output only the features corresponding to CLS token 
+only_cls_embed: True
+
+# Specify the path of output features
+feat_output_path: '/Users/dachuan/projects/mjj/albef_predict/feat_output.jsonl'

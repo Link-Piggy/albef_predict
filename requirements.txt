@@ -1,0 +1,8 @@
+ipywidgets
+pandas
+torch
+transformers==4.28.1
+timm
+ruamel.yaml<0.18.0
+protobuf
+loguru
